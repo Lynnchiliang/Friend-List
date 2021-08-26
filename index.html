@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/85c68cde47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Friends List</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./favortie.html">Favorite</a>
+        </li>
+      </ul>
+      <!-- Search Bar -->
+      <form class="form-inline my-2 my-lg-0" id="search-form">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." id="search-input" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <div class="row ml-4 mr-4" id = "data-panel">
+      <!-- Data-panel -->
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-4 text-center" id="user-modal-image">
+            </div>
+            <div class="col-sm-8">
+              <p id="user-modal-name"></p>
+              <p id="user-modal-region"></p>
+              <p id="user-modal-date"></p>
+              <p id="user-modal-email"></p>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label" id="user-modal-message"></label>
+              <textarea class="form-control" id="text-message" placeholder="Hi..."></textarea>
+            </div>
+            <div class="bs text-right">
+              <button type="button" class="btn btn-primary" id="send-message">Send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paginator -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="paginator">
+    </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
